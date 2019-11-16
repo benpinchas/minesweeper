@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>minesweeper</title>
+      <link rel="stylesheet" href="css/main.css"/>
+   </head>
+   <body onload="init()">
+      <div class="main-container">
+         <button class="directions-button" onclick="toggleDirections(this)">Directions 📕</button>
+         <div class="directions hide">
+            <ul>
+               <li>left click to reveal the cell <img src="img/dir-reveal.png">.
+                  <span class="note">
+                  After your first click - Game is start.</span> 
+                  Don't be afraid, you can't hit a mine in your first click.
+               </li>
+               <li>If you hit a mine<img src="img/dir-mine.png"> you lose 1 life and our buddy will be sad<img src="img/dir-sad.png">.  Every game you get 3 lives. If you hit 3 mines our buddy will die<img src="img/dir-dead.png">
+                  and all the mines would expose<img src="img/dir-gameover-expose.png">. You can click him any time to start a new game.
+               </li>
+               <li>Right click to flag a suspected cell<img src="img/dir-flag.png">. 
+                  You can't reveal a flagged cell. Right click again to remove the flag.
+               </li>
+               <li>Hint mode: Every game you get 3 hints. Click the hints button, our buddy now opens his eyes <img src="img/dir-eyes.png">  Click on a suspected area to expose it for a 1.5 sec so you couls see what's in them<img src="img/dir-hint.png">. Also, the safe/dangerouse cells would turn to light-green/light-red.
+                  You can't click on a revealed cell but on its Neighbor its ok.
+                  <span class="warning">
+                  NOTE: YOU CAN'T USE HINT BEFORE REVEAL AT LEAST ONE CELL IN THE BOARD.
+                  </span>
+               </li>
+               <li>After you entered your name, the program check if it has your name & your best score stored in your localHost. If it does, it will greet you for coming back. Else, it will welcome you for your first time.
+               </li>
+               <li>
+                  You can break other scores and move up in the scores list.
+                  Make our buddy proud <img src="img/dir-sunglasses.png">
+                  <br><br>
+                  <span class="note">GOOD LUCK!</span>
+               </li>
+            </ul>
+         </div>
+         
+         <div class="size">
+            <h3>Choose your size</h3>
+            <input type="radio" name="size" onclick="init(this)" value="4"> 4*4 (4 mines)&nbsp;
+            <input type="radio" name="size" onclick="init(this)" value="8" checked> 8*8 (8 mines)&nbsp;
+            <input type="radio" name="size" onclick="init(this)" value="12">12*12 (12 mines)&nbsp;
+         </div>
+         
+
+         <div class="game-container">
+         <div class="player-name-container">
+            <div class="player-name">BEN</div>
+         </div>
+            <div class="stats">
+           
+                  <div>
+                     <span class="timer">000</span>
+                  </div>
+                  <div>
+                     <button class="smiley" onclick="init()">😃</button>
+                  </div>
+                  <div>
+                     <span class="lives">3</span> LIVES
+                  </div>
+
+            </div>
+
+            <div class="hint-container">
+               <button class="hint-button" onclick="toggleHintMode()">use hint</button>  
+            </div>
+            
+            <div class="board-container"></div>
+         </div>
+
+         <div class="players-list-container">
+            <h2 class="best-players-heading"></h2>
+            <ol class="players-list">
+            </ol>
+         </div>
+      </div>
+      <script src="js/main.js"></script> 
+   </body>
+</html>

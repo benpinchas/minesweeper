@@ -1,0 +1,201 @@
+body {
+	 font-family: Roboto Slab, sans-serif;
+	 background-color: white;
+}
+
+.main-container{
+	 margin-left: auto;
+     margin-right: auto;
+     width: 70%;
+     background-color: #e6e6e6;
+     padding: 30px;
+}
+
+
+.size{
+	text-align: center;
+	font-size: 25px;
+	background-color: #9fa4ad;
+	padding: 20px;
+	padding-bottom: 30px;
+	margin: 10px 0px;
+	border: 2px solid white;
+}
+
+.size h3{
+	margin: 10px;
+}
+
+
+.stats {
+	border: 0px solid black;
+	background-color: #b3b3b3;
+	text-align: center;
+	font-size: 25px;
+	padding: 10px;
+	margin:auto;
+}
+
+/*
+.stats {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 25px;
+}*/
+
+.game-container {
+	margin: auto;
+	margin-top: 80px;
+	background-color: #f2f2f2;
+	width: 60%;
+	padding-bottom: 40px;
+}
+
+.player-name-container {
+	background-color: #e6e6e6;
+}
+
+.player-name {
+	background-color: black;
+	color: #5bb23c;
+	width: 10%;
+	padding: 5px;
+	font-size: 17;
+}
+
+.stats div{
+	width: 32%;
+	display: inline-block;
+}
+
+.timer {
+	color: red;
+	background-color: black;
+	padding: 3px 10px;
+	font-size: 26px;
+}
+
+.stats .smiley{
+	font-size: 25px;
+	cursor: pointer;
+}
+
+
+.directions-button {
+	margin: 0 auto;
+	font-size: 25px;
+	padding: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.directions {
+	font-size: 18px;
+	border: 1px solid black;
+	padding: 10px;
+	margin-bottom: 20px; 
+	background-color: rgb(255, 244, 230, 0.7)  /*#fff4e6;*/
+}
+
+
+.directions img{
+	height:  25px;
+	margin-left: 7px;
+	margin-right: 2px;
+	padding-top: 2px;
+}
+
+.directions ul{
+	padding-left: 20px;
+}
+
+.directions li{
+	margin-bottom: 10px; 
+}
+.directions .note {
+	color:green;
+}
+.directions .warning {
+	color:red;
+}
+
+
+.board-container table{
+	margin: 0 auto;
+}
+
+
+.cell {
+	background-color: white;
+	border: 1px solid black;
+	width: 40px;
+	height: 40px;
+	font-size: 25px;
+	text-align: center;
+}
+
+.cover {
+  background-color: gray;
+  cursor: pointer;
+  /*color: rgba(255,255,255,0.3);*/ /*tarnsparent*/
+}
+
+
+/*.cell:hover {
+	background-color: rgba(1,1,1,0.1);
+	cursor: pointer;
+}*/
+
+
+.hint-green {
+  background-color:#CCFFCC;
+  /*color: rgba(255,255,255,0.3);*/ /*tarnsparent*/
+}
+
+.hint-red {
+  background-color:pink;
+  /*color: rgba(255,255,255,0.3);*/ /*tarnsparent*/
+}
+
+.hint-container {
+	text-align: center;
+}
+
+.hint-button {
+	width:20%;
+	margin: 20px;
+	padding: 7px;
+	font-size: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+
+
+.players-list-container {
+	margin-top: 100px;
+	background-color: white;
+	padding: 10px;
+	padding-left:  20px;
+	border-radius: 20px;
+}
+
+.players-list-container h2 {
+	margin-bottom: 20px;
+}
+
+
+.players-list li {
+	font-size: 20px;
+	padding-bottom:20px
+}
+
+
+.hide {
+	display: none;
+}
+
+
+
+
+
